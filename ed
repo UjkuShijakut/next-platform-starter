@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yacht Propeller Manufacturing Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 640px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .chart-container {
+                height: 400px;
+                max-height: 450px;
+            }
+        }
+        .chart-container-radar {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container-radar {
+                height: 450px;
+                max-height: 500px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#CAF0F8] text-[#004D74]">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-[#0077B6] mb-4">The Engineering of a Yacht Propeller</h1>
+            <p class="text-xl md:text-2xl text-[#004D74]">A Data-Driven Look at Sand Casting Nickel-Aluminium Bronze</p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 my-10">
+            <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-[#00A1E4] mb-4">The Challenge</h2>
+                <p class="text-base leading-relaxed">
+                    Ship propellers operate in one of the planet's harshest environments. They must withstand immense mechanical stress, high rotational speeds, and constant exposure to corrosive seawater. Manufacturing them requires exceptional dimensional accuracy and material integrity to ensure efficiency and prevent catastrophic failure.
+                </p>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-[#00A1E4] mb-4">The Solution: NAB Casting</h2>
+                <p class="text-base leading-relaxed">
+                    For this Ø420 mm yacht propeller, sand casting with **Nickel-Aluminium Bronze (NAB, C95800)** is the optimal solution. This process allows for the complex 4-blade geometry, while NAB provides a superior combination of strength, castability, and outstanding resistance to both corrosion and cavitation erosion.
+                </p>
+            </div>
+        </section>
+
+        <section class="my-10 md:my-16">
+            <h2 class="text-3xl font-bold text-center text-[#0077B6] mb-8">Propeller Key Specifications</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center">
+                    <div class="text-5xl font-bold text-[#00A1E4]">Ø420<span class="text-3xl">mm</span></div>
+                    <div class="text-sm font-semibold mt-2">Overall Diameter</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center">
+                    <div class="text-5xl font-bold text-[#00A1E4]">4</div>
+                    <div class="text-sm font-semibold mt-2">Blades</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center">
+                    <div class="text-5xl font-bold text-[#00A1E4]">20<span class="text-3xl">mm</span></div>
+                    <div class="text-sm font-semibold mt-2">Max Blade Thickness</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center">
+                    <div class="text-5xl font-bold text-[#00A1E4]">305<span class="text-3xl">mm</span></div>
+                    <div class="text-sm font-semibold mt-2">Blade Length</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-10 md:my-16">
+            <h2 class="text-3xl font-bold text-center text-[#0077B6] mb-8">The Manufacturing Process</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10">The casting process is a precise sequence designed to create a solid, defect-free component. Each step is critical, from the initial design to final quality assurance.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-2 flex-wrap">
+                <div class="bg-white rounded-lg shadow-lg p-4 font-semibold text-center w-48">1. Design (CAD)</div>
+                <div class="text-3xl font-bold text-[#0077B6] transform rotate-90 md:rotate-0">→</div>
+                <div class="bg-white rounded-lg shadow-lg p-4 font-semibold text-center w-48">2. Planning (Mold/Riser)</div>
+                <div class="text-3xl font-bold text-[#0077B6] transform rotate-90 md:rotate-0">→</div>
+                <div class="bg-white rounded-lg shadow-lg p-4 font-semibold text-center w-48">3. Casting (Melt/Pour)</div>
+                <div class="text-3xl font-bold text-[#0077B6] transform rotate-90 md:rotate-0">→</div>
+                <div class="bg-white rounded-lg shadow-lg p-4 font-semibold text-center w-48">4. Finishing (NDT)</div>
+                <div class="text-3xl font-bold text-[#0077B6] transform rotate-90 md:rotate-0">→</div>
+                <div class="bg-white rounded-lg shadow-lg p-4 font-semibold text-center w-48">5. Analysis</div>
+            </div>
+        </section>
+
+        <section class="my-10 md:my-16">
+            <h2 class="text-3xl font-bold text-center text-[#0077B6] mb-8">The Science of a Sound Casting</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10">The primary challenge in casting is preventing shrinkage porosity—small voids left as the metal cools and contracts. This is solved by ensuring the "feeder" (riser) stays molten longer than the casting itself, feeding liquid metal to the part as it solidifies.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+                
+                <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-[#00A1E4] mb-4">Casting vs. Riser Modulus</h3>
+                    <p class="mb-4">The solidification time is proportional to the component's modulus (Volume / Surface Area). To be effective, the riser's modulus ($M_r$) must be larger than the casting's critical modulus ($M_c$).</p>
+                    <div class="chart-container">
+                        <canvas id="modulusChart"></canvas>
+                    </div>
+                    <p class="text-center mt-4 text-sm">The $M_r$ of 13mm is 1.3x larger than the $M_c$ of 10mm, ensuring correct directional solidification.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-[#00A1E4] mb-4">Solidification Time Ratio</h3>
+                    <p class="mb-4">Based on Chvorinov's Rule, the modulus difference results in a significant safety margin. The riser remains molten, allowing it to feed the casting and prevent defects.</p>
+                    <div class="text-center my-16">
+                        <div class="text-7xl font-bold text-[#0077B6]">1.69x</div>
+                        <div class="text-xl font-semibold mt-2">Riser Solidification Time</div>
+                        <p class="mt-2">The riser stays liquid <span class="font-bold">69% longer</span> than the propeller casting, ensuring a high-quality, solid part.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8 lg:col-span-2">
+                    <h3 class="text-xl font-bold text-center text-[#00A1E4] mb-4">Manufacturing Yield & Mass Breakdown</h3>
+                    <p class="text-center max-w-2xl mx-auto mb-4">To produce the final 14.43 kg propeller, a total of 20.4 kg of molten NAB must be poured. The excess material in the riser and gating system is necessary for the process and is recycled.</p>
+                    <div class="chart-container">
+                        <canvas id="yieldChart"></canvas>
+                    </div>
+                    <p class="text-center mt-4 text-lg font-semibold">Casting Yield: $\sim$71%</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="my-10 md:my-16">
+            <h2 class="text-3xl font-bold text-center text-[#0077B6] mb-8">Economic Analysis: One-Off Unit Cost</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10">For a single-unit production, the total estimated cost is $\sim$€838.50. The breakdown shows that specialized labor and pattern tooling are the dominant cost drivers, not raw materials.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+                <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-[#00A1E4] mb-4">Total Cost Breakdown</h3>
+                    <div class="chart-container">
+                        <canvas id="costChart"></canvas>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8 text-center">
+                    <div class="text-2xl font-semibold mb-2">Total Estimated Cost</div>
+                    <div class="text-7xl font-bold text-[#0077B6] my-6">€838.50</div>
+                    <p class="text-base">For a small batch, this unit cost would decrease significantly as the one-time tooling cost is amortized over more parts.</p>
+                    <p class="text-base mt-4"><span class="font-bold">Labor & Tooling</span> account for <span class="font-bold">~49%</span> of the total cost.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-10 md:my-16">
+            <h2 class="text-3xl font-bold text-center text-[#0077B6] mb-8">Material Showdown: NAB vs. Duplex Stainless Steel</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10">While Duplex Stainless Steel offers higher strength, Nickel-Aluminium Bronze (NAB) provides a superior *balance* of properties for this marine application. Its excellent castability and machinability reduce manufacturing risk and cost, while its corrosion and cavitation resistance are ideal for seawater.</p>
+            <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8">
+                <div class="chart-container-radar">
+                    <canvas id="materialChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <footer class="my-10 md:my-16 text-center">
+            <div class="bg-white rounded-xl shadow-2xl p-8 max-w-3xl mx-auto">
+                <h2 class="text-2xl font-bold text-[#0077B6] mb-4">Conclusion: A Robust & Economical Solution</h2>
+                <p class="text-lg mb-6">The modulus-based riser design provides a reliable method for producing a defect-free NAB yacht propeller. The final recommendation is to polish the propeller to a surface finish of:</p>
+                <div class="text-6xl font-bold text-[#00A1E4]">Rₐ ≤ 0.8 µm</div>
+                <p class="text-base mt-4">This high-quality finish is critical for maximizing hydrodynamic efficiency and delaying cavitation, ensuring peak performance and durability.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const primaryColor = '#00A1E4';
+            const secondaryColor = '#0077B6';
+            const tertiaryColor = '#004D74';
+            const lightBlue = '#90E0EF';
+            const lighterBlue = '#CAF0F8';
+            const gridColor = '#B0B0B0';
+            const textColor = '#004D74';
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+
+            const defaultOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: textColor,
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        },
+                        titleFont: {
+                            size: 16
+                        },
+                        bodyFont: {
+                            size: 14
+                        },
+                        boxPadding: 4
+                    }
+                }
+            };
+
+            const barChartOptions = {
+                ...defaultOptions,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: textColor
+                        },
+                        grid: {
+                            color: gridColor,
+                            drawTicks: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Modulus (mm)',
+                            color: textColor,
+                            font: {
+                                size: 14,
+                                weight: 'bold'
+                            }
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: textColor,
+                            font: {
+                                size: 14
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        ...defaultOptions.plugins.tooltip
+                    }
+                }
+            };
+            
+            const modulusCtx = document.getElementById('modulusChart');
+            if(modulusCtx) {
+                new Chart(modulusCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Casting (Mc)', 'Riser (Mr)'],
+                        datasets: [{
+                            data: [10, 13],
+                            backgroundColor: [primaryColor, secondaryColor],
+                            borderColor: [primaryColor, secondaryColor],
+                            borderWidth: 1,
+                            barThickness: 50
+                        }]
+                    },
+                    options: barChartOptions
+                });
+            }
+
+            const doughnutOptions = {
+                ...defaultOptions,
+                cutout: '60%'
+            };
+
+            const yieldCtx = document.getElementById('yieldChart');
+            if(yieldCtx) {
+                new Chart(yieldCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            ['Propeller Mass', '(14.43 kg)'],
+                            ['Riser/Gating Waste', '(5.97 kg)']
+                        ],
+                        datasets: [{
+                            label: 'Mass (kg)',
+                            data: [14.43, 5.97],
+                            backgroundColor: [primaryColor, lightBlue],
+                            borderColor: ['#FFFFFF'],
+                            borderWidth: 3
+                        }]
+                    },
+                    options: doughnutOptions
+                });
+            }
+            
+            const costCtx = document.getElementById('costChart');
+            if(costCtx) {
+                new Chart(costCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            ['Labor', '(€312.5)'],
+                            ['Material', '(€306)'],
+                            ['Tooling', '(€100)'],
+                            ['QA', '(€60)'],
+                            ['Consumables', '(€55)'],
+                            ['Energy', '(€5)']
+                        ],
+                        datasets: [{
+                            label: 'Cost (€)',
+                            data: [312.5, 306, 100, 60, 55, 5],
+                            backgroundColor: [secondaryColor, primaryColor, lightBlue, '#AEDFF7', '#C0E8F9', lighterBlue],
+                            borderColor: ['#FFFFFF'],
+                            borderWidth: 3
+                        }]
+                    },
+                    options: doughnutOptions
+                });
+            }
+
+            const materialCtx = document.getElementById('materialChart');
+            if(materialCtx) {
+                new Chart(materialCtx, {
+                    type: 'radar',
+                    data: {
+                        labels: [
+                            'Castability',
+                            ['Corrosion', 'Resistance'],
+                            ['Cavitation', 'Resistance'],
+                            'Strength',
+                            'Machinability'
+                        ],
+                        datasets: [
+                            {
+                                label: 'Nickel-Aluminium Bronze',
+                                data: [5, 5, 5, 3, 4],
+                                fill: true,
+                                backgroundColor: 'rgba(0, 161, 228, 0.2)',
+                                borderColor: primaryColor,
+                                pointBackgroundColor: primaryColor,
+                                pointBorderColor: '#fff',
+                                pointHoverBackgroundColor: '#fff',
+                                pointHoverBorderColor: primaryColor
+                            },
+                            {
+                                label: 'Duplex Stainless Steel',
+                                data: [2, 4, 3, 5, 2],
+                                fill: true,
+                                backgroundColor: 'rgba(0, 77, 116, 0.2)',
+                                borderColor: tertiaryColor,
+                                pointBackgroundColor: tertiaryColor,
+                                pointBorderColor: '#fff',
+                                pointHoverBackgroundColor: '#fff',
+                                pointHoverBorderColor: tertiaryColor
+                            }
+                        ]
+                    },
+                    options: {
+                        ...defaultOptions,
+                        scales: {
+                            r: {
+                                beginAtZero: true,
+                                max: 5,
+                                min: 0,
+                                ticks: {
+                                    stepSize: 1,
+                                    color: textColor,
+                                    backdropColor: 'rgba(0,0,0,0)'
+                                },
+                                pointLabels: {
+                                    font: {
+                                        size: 14
+                                    },
+                                    color: textColor
+                                },
+                                grid: {
+                                    color: gridColor
+                                },
+                                angleLines: {
+                                    color: gridColor
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
